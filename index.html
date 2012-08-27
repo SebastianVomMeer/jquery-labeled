@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-labeled : Select form fields and other interactive elements like &lt;a&gt; by visual descriptors like &lt;label&gt; or placeholder attributes. Labeled is a jQuery content filter and can be used like :labeled('Login') or input:labeled('email-address')." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-labeled</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/SebastianG86/jquery-labeled">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-labeled</h1>
+          <h2 id="project_tagline">Select form fields and other interactive elements like &lt;a&gt; by visual descriptors like &lt;label&gt; or placeholder attributes. Labeled is a jQuery content filter and can be used like :labeled('Login') or input:labeled('email-address').</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/SebastianG86/jquery-labeled/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/SebastianG86/jquery-labeled/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Labeled - a jQuery Selection Extension</h1>
+
+<p>Select form fields and other interactive elements like &lt;a&gt; by visual descriptors like &lt;label&gt; or placeholder attributes. Labeled is a jQuery content filter and can be used like :labeled('Login') or input:labeled('email-address').</p>
+
+<h2>Examples</h2>
+
+<h3>Links</h3>
+
+<p>HTML:</p>
+
+<pre><code>&lt;a&gt;Anchor Text Node&lt;/a&gt;
+</code></pre>
+
+<p>Find a:</p>
+
+<pre><code>$(':labeled(Anchor Text Node)')
+// or
+$('a:labeled(Anchor Text Node)')
+</code></pre>
+
+<h3>Buttons</h3>
+
+<p>HTML:</p>
+
+<pre><code>&lt;input type="submit" value="Click me"&gt;
+&lt;!-- or --&gt;
+&lt;button&gt;Click me&lt;/button&gt;
+</code></pre>
+
+<p>Find input:</p>
+
+<pre><code>$(':labeled(Click me)')
+</code></pre>
+
+<h3>Labeled Form Fields</h3>
+
+<p>HTML:</p>
+
+<pre><code>&lt;label for="id"&gt;Text Input Label Text Node&lt;/label&gt;
+&lt;input type="text" id="id"&gt;
+</code></pre>
+
+<p>Find input:</p>
+
+<pre><code>$(':labeled(Text Input Label Text Node)')
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-labeled maintained by <a href="https://github.com/SebastianG86">SebastianG86</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
