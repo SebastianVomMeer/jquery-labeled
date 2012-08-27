@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.labeled.js"></script>
+	<style type="text/css">
+		td:first-child {text-align:right;padding-right:1em;}
+		td:nth-child(2) {font-family:monospace;font-size: 1.2em;line-height:1.4em;white-space:pre-wrap;}
+		td {padding-bottom:.5em;}
+		tr:nth-child(2n) td {border-bottom:1px solid #ccc;padding-bottom:1em;}
+		tr:nth-child(2n-1) td {padding-top:1em;}
+		table {border-collapse: collapse;margin:2em auto;}
+		table script {display:block;}
+		input[type=text] {border:2px solid grey;}
+	</style>
+	<table>
+		<tr>
+			<td><a href="#top">Anchor Text Node</a></td>
+			<td>&lt;a&gt;Anchor Text Node&lt;/a&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Anchor Text Node)').css({color: 'green'});</script></td>
+		</tr>
+		<tr>
+			<td><button>Button Text Node</button></td>
+			<td>&lt;button&gt;Button Text Node&lt;/button&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Button Text Node)').css({color: 'blue'});</script></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Input Value"/></td>
+			<td>&lt;input type="submit" value="Input Value"&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Input Value)').css({color: 'red'});</script></td>
+		</tr>
+		<tr>
+			<td><input type="text" placeholder="Placeholder"/></td>
+			<td>&lt;input type="text" placeholder="Placeholder"&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Placeholder)').css({borderColor: 'orange'});</script></td>
+		</tr>
+		<tr>
+			<td><label for="id">Text Input Label Text Node</label><br><input type="text" id="id"/></td>
+			<td>&lt;label for="id"&gt;Text Input Label Text Node&lt;/label&gt;<br>&lt;input type="text" id="id"&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Text Input Label Text Node)').css({borderColor: 'maroon'});</script></td>
+		</tr>
+		<tr>
+			<td><label for="id2">Checkbox Label Text Node</label><br><input type="checkbox" id="id2"/></td>
+			<td>&lt;label for="id2"&gt;Checkbox Label Text Node&lt;/label&gt;<br>&lt;input type="checkbox" id="id2"&gt;</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><script type="text/javascript">$(':labeled(Checkbox Label Text Node)').css({outline: '2px solid purple'});</script></td>
+		</tr>
+	</table>
+</html>
