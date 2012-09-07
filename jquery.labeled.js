@@ -17,13 +17,19 @@
 	    		|| element.is('button:contains("' + labelText + '")')
 	    		|| element.is('input[value="' + labelText + '"]')
 	    		|| element.is('*[placeholder="' + labelText + '"]')
-	    		|| elementHasReferencingLabel(element, labelText);
+	    		|| elementHasReferencingLabel(element, labelText)
+	    		|| elementHasLegend(element, labelText);
 	    }
 	});
 
 	function elementHasReferencingLabel(element, labelText) {
 		return element.is('[id]') 
 		    && $('label[for=' + element.attr('id') + ']:contains(' + labelText + ')').length;
+	}
+
+	function elementHasLegend(element, labelText) {
+		return element.is('fieldset') 
+			&& element.find('> legend:contains(' + labelText + ')').length;
 	}
 
 })(jQuery);

@@ -38,3 +38,13 @@ HTML:
 Find input:
 
 	$(':labeled(Text Input Label Text Node)')
+
+### Fieldsets with Legends
+
+HTML:
+
+	<fieldset><legend>Fieldset Legend</legend></fieldset>
+
+Find input:
+
+	$(':labeled(Fieldset Legend)')
